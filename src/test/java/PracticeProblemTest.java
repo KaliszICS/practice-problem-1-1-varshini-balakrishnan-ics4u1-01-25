@@ -1,7 +1,6 @@
 import java.lang.reflect.Method;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
-import java.io.*;
 
 public class PracticeProblemTest {
    @Test
@@ -9,7 +8,7 @@ public class PracticeProblemTest {
    void sumColTest3() {
       Class<?> testClass = PracticeProblem.class;
       try {
-         Class[] cArg = { int[][].class, int.class };
+         Class<?>[] cArg = { int[][].class, int.class };
          Method method = testClass.getDeclaredMethod("sumColumn", cArg);
          // Enter code here
          int[][] arr = { { 1, 3, 4, 6 },
@@ -31,7 +30,7 @@ public class PracticeProblemTest {
    void sumColTest2() {
       Class<?> testClass = PracticeProblem.class;
       try {
-         Class[] cArg = { int[][].class, int.class };
+         Class<?>[] cArg = { int[][].class, int.class };
          Method method = testClass.getDeclaredMethod("sumColumn", cArg);
          // Enter code here
          int[][] arr = { { 1, 3, 4, 6 },
@@ -52,7 +51,7 @@ public class PracticeProblemTest {
    void sumColTest1() {
       Class<?> testClass = PracticeProblem.class;
       try {
-         Class[] cArg = { int[][].class, int.class };
+         Class<?>[] cArg = { int[][].class, int.class };
          Method method = testClass.getDeclaredMethod("sumColumn", cArg);
          // Enter code here
          int[][] arr = { { 0, 3, 4, 6 },
@@ -73,7 +72,7 @@ public class PracticeProblemTest {
    void sumRowTest3() {
       Class<?> testClass = PracticeProblem.class;
       try {
-         Class[] cArg = { int[][].class, int.class };
+         Class<?>[] cArg = { int[][].class, int.class };
          Method method = testClass.getDeclaredMethod("sumRow", cArg);
          // Enter code here
          int[][] arr = { { 1, 3, 4, 6 },
@@ -94,7 +93,7 @@ public class PracticeProblemTest {
    void sumRowTest2() {
       Class<?> testClass = PracticeProblem.class;
       try {
-         Class[] cArg = { int[][].class, int.class };
+         Class<?>[] cArg = { int[][].class, int.class };
          Method method = testClass.getDeclaredMethod("sumRow", cArg);
          // Enter code here
          int[][] arr = { { 1, 3, 4, 6 },
@@ -116,7 +115,7 @@ public class PracticeProblemTest {
    void sumRowTest1() {
       Class<?> testClass = PracticeProblem.class;
       try {
-         Class[] cArg = { int[][].class, int.class };
+         Class<?>[] cArg = { int[][].class, int.class };
          Method method = testClass.getDeclaredMethod("sumRow", cArg);
          // Enter code here
          int[][] arr = { { 1, 3, 4, 6 },
@@ -137,7 +136,7 @@ public class PracticeProblemTest {
    void sum2DTest3() {
       Class<?> testClass = PracticeProblem.class;
       try {
-         Class[] cArg = { int[][].class };
+         Class<?>[] cArg = { int[][].class };
          Method method = testClass.getDeclaredMethod("sum2D", cArg);
          // Enter code here
           int[][] arr = new int[][]{ { 1, 3, -4, 6 },
@@ -158,7 +157,7 @@ public class PracticeProblemTest {
    void sum2Dtest2() {
       Class<?> testClass = PracticeProblem.class;
       try {
-         Class[] cArg = { int[][].class };
+         Class<?>[] cArg = { int[][].class };
          Method method = testClass.getDeclaredMethod("sum2D", cArg);
          // Enter code here
          int[][] arr = { { 0, 0, 0, 0 },
@@ -179,7 +178,7 @@ public class PracticeProblemTest {
    void Sum2DTest1() {
       Class<?> testClass = PracticeProblem.class;
       try {
-         Class[] cArg = { int[][].class };
+         Class<?>[] cArg = { int[][].class };
          Method method = testClass.getDeclaredMethod("sum2D", cArg);
          // Enter code here
          int[][] arr = { { 1, 3, 4, 6 },

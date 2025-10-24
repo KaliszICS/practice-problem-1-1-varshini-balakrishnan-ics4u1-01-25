@@ -5,14 +5,10 @@ class Notes {
 
 		// 1-D Array
 
-		int num;
-
-		int[] intArray = new int[25];
 		int[] intArray2 = { 1, 4, 6 };
 
 		// 2-D Arrays
 
-		int[][] intArray2D = new int[5][10]; // NUMBER OF ROWS, NUMBER OF COLUMNS
 		int[][] intArray2D2 = {
 				{ 1, 3, 5 },
 				{ 2, 4, 6, 7},
